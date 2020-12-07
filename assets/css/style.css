@@ -12,16 +12,13 @@
 }
 
 .header {
-    background: #00cc99;
     grid-area: header;
 }
  
 .content {
-    background: #ff8080;
     grid-area: content;
 }
 
 .footer {
-    background: #0099ff;
     grid-area: footer;
 }
