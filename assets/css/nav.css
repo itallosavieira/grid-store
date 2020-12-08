@@ -1,8 +1,21 @@
+.nav {
+    margin: 0 auto;
+}
+
 .nav__link {
     color: #333;
     padding: .5rem 1rem;
+    font-size: 1rem;
 }
 
 .nav__link:hover, .active {
     border-bottom: 2px solid #0073e6;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__link {
+        color: #333;
+        padding: .5rem;
+        font-size: 1rem;
+    }
 }

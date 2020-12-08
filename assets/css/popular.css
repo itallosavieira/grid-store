@@ -37,11 +37,12 @@
         'card-image'
         'card-wrap';
     grid-template-columns: 100%;
-    grid-template-rows: 173px auto;
+    grid-template-rows: 125px auto;
     margin-bottom: 1rem;
     margin-right: 1rem;
     width: calc(20% - 1rem);
-    min-width: 280px;
+    min-width: 220px;
+    border: 2px solid #f1f1f1;
 }
 
 .popular__card:last-child {
@@ -57,16 +58,18 @@
 .popular__card___wrap {
     grid-area: card-wrap;
     grid-row-gap: .5rem;
-    padding: .75rem;
+    padding: .5rem .75rem;
     grid-template-areas:
         'card-header',
         'card-content';
     grid-template-rows: 50px auto;
+    text-align: center;
 }
 
 .popular__card___title {
     color: #333;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    
 }
 
 .popular__card___date {
@@ -75,6 +78,7 @@
 }
 
 .popular__card___description {
+    color: #4f4e4e;
     margin-top: 1rem;
     text-align: justify;
     line-height: 1.5rem;

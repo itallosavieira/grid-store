@@ -5,14 +5,33 @@
     grid-template-rows: 1fr 1fr 1fr;
     height: calc(100vh - 50px);
     padding: 1rem;
-    
+}
+
+@media screen and (max-width: 768px) {
+    .featured {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .featured__main {
+        height: 200px;
+    }
+
+    .featured__categories {
+        height: auto;
+    }
+
+    .featured__secondary{
+        height: 200px;
+    }
 }
 
 .box {
     align-items: flex-end;
     display: flex;
     text-align: center;
-
+    border: 2px solid #f1f1f1;
 }
 
 .featured__title {

@@ -1,13 +1,22 @@
-.app {
-    background: #f1f1f1;
+.page {
     display: grid;  
+    grid-template-areas: 
+        'inner-page'
+        'footer';
+    background: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.inner-page {
+    grid-area: inner-page;
+    display: grid;
     grid-template-areas: 
         'header'
-        'content'
-        'footer';
+        'content';
     grid-template-columns: auto;
     grid-template-rows: 50px auto auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header {
@@ -16,6 +25,7 @@
     grid-area: header;
     padding: 0 1.25rem;
 }
+
  
 .content {
     grid-area: content;
